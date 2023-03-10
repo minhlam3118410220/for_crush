@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Game For Crush</title>
+</head>
+<body>
+    <header>    
+        <h1>Recuse.com</h1>
+        
+      </header>
+      <main>
+        <div class="game-container">
+            <div class="title">
+                <h2>ÔI KHÔNG ! </h2>
+                <h2>Bức tường sắp bị lủng hãy giải cứu nó</h2>
+              </div>
+            <div class="content">
+              <div class="image">
+                <img src="img/midieu.jpg" alt="Game Image">
+              </div>
+              <div class="text">
+                <p>Hãy nhấn 1 trong 2 nút để giải cứu bức tường khỏi Mỹ Diệuu</p>
+              </div>
+              <div class="buttons">
+                <button id="showDivButton" class="button-blue" ></button>
+                <button id="showDivButton1" class="button-red"></button>
+
+                <div id="myDiv" >
+                    <h2>CHIẾN THẮNG</h2>
+                    <img src="img/love.gif"  alt="Hình ảnh">
+                    <p >Chúc mừng bạn đã chiến thắng . </p>
+                    <p>Phần thưởng của bạn chính là tôi.</p>
+                    <p>Hãy yêu tôi thật nhiều nhéee . </p>
+                    <button class="button" id="closeDivButton">Chơi lại đi =)</button>
+                  </div>
+                </div>
+
+                <div id="myDiv1" >
+                    <h2>THẤT BẠI</h2>
+                    <img src="img/hug.gif"  alt="Hình ảnh">
+                    <p>Bạn đã thất bại trong trò chơi. </p>
+                    <p>Hình phạt chính là bạn sẽ thuộc tôi.</p>
+                    <p>Tôi hứa sẽ yêu bạn thật nhìuuu. </p>
+                    <button class="button" id="closeDivButton1">Chơi lại đi=)</button>
+                  </div>
+                </div>
+            </div>
+
+    <script >
+
+            const showDivButton = document.getElementById("showDivButton");
+            const myDiv = document.getElementById("myDiv");
+            const closeDivButton = document.getElementById("closeDivButton");
+
+            showDivButton.addEventListener("click", function() {
+                myDiv.classList.add("show");
+            });
+
+            closeDivButton.addEventListener("click", function() {
+                myDiv.classList.remove("show");
+            });
+
+            const showDivButton1 = document.getElementById("showDivButton1");
+            const myDiv1 = document.getElementById("myDiv1");
+            const closeDivButton1 = document.getElementById("closeDivButton1");
+
+            showDivButton1.addEventListener("click", function() {
+                myDiv1.classList.add("show");
+            });
+
+            closeDivButton1.addEventListener("click", function() {
+                myDiv1.classList.remove("show");
+            });
+    </script>
+</body>
+</html>

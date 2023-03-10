@@ -1,0 +1,257 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #1d1c1c;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .intro {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .intro p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: red;
+  }
+
+  .intro span {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .buttoni {
+    display: inline-block;
+    background-color: rgb(13, 159, 13);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px #999; ;
+  }
+  
+  .buttoni:hover {
+    background-color: #e90ad3;
+  }
+
+  .game-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    width: 60%;
+    height: 25%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-blue,
+  .button-red {
+    background-color: white;
+    border: 1px solid rgb(44, 43, 43);
+    color: black;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #999; ;
+  }
+  
+  .button-blue {
+    background-color: rgb(14, 14, 212);  
+  }
+  .button-blue:hover{
+    background-color: rgb(1, 1, 255);
+  }
+  .button-red {
+    background-color: rgb(195, 29, 29);
+  }
+  .button-red:hover {
+    background-color: #ff0707;
+  }
+  
+  #myDiv {
+    width: 300px;
+    height:400px;
+    display: none;
+    position: fixed;
+    top: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 15%;  
+    background-color: rgb(255, 255, 255); /* Màu nền đục của thẻ div */
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #myDiv.show {
+    display: block;
+
+    /* Thêm các thuộc tính CSS khác tùy ý */
+  }
+  #myDiv h2 {
+
+    color: #122dda;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 5%;
+  }
+  #myDiv img {
+    width: 60%;
+    height: 45%;
+    margin: 3% 20%;
+    margin-bottom: 1rem;
+    height: 170px;
+
+  }
+  #myDiv p {
+    font-size: 0.9rem;
+    color: #171515;
+    text-align: center;
+
+  }
+  #myDiv button {
+    background-color: #1f1ff5;
+    width:fit-content;
+    border-radius: 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 3% 28%;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px #999; ;
+    align-self: center;
+  }
+
+
+
+  #myDiv1 {
+    width: 300px;
+    height:400px;
+    display: none;
+    position: fixed;
+    top: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 15%;  
+    background-color: rgb(255, 255, 255); /* Màu nền đục của thẻ div */
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #myDiv1.show {
+    display: block;
+
+    /* Thêm các thuộc tính CSS khác tùy ý */
+  }
+  #myDiv1 h2 {
+
+    color: #da1212;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 5%;
+  }
+  #myDiv1 img {
+    width: 60%;
+    height: 45%;
+    margin: 3% 20%;
+    margin-bottom: 1rem;
+    height: 170px;
+
+  }
+  #myDiv1 p {
+    font-size: 0.9rem;
+    color: #171515;
+    text-align: center;
+
+  }
+  #myDiv1 button {
+    background-color: #f51f1f;
+    width:fit-content;
+    border-radius: 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 3% 28%;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px #999; ;
+    align-self: center;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #myDiv {
+      padding: 1rem;
+    }
+  }
+  
+ 
+
+  
